@@ -69,7 +69,7 @@ apt_packages+=(rvm)
 # https://github.com/rbenv/ruby-build/wiki
 apt_packages+=(
   autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev
-  libncurses5-dev libffi-dev libgdbm3 libgdbm-dev zlib1g-dev
+  libncurses5-dev libffi-dev libgdbm-dev zlib1g-dev
 )
 
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-16-04
@@ -249,20 +249,6 @@ if is_ubuntu_desktop; then
   #   echo steam steam/license note | sudo debconf-set-selections
   # }
 fi
-
-function other_stuff() {
-  # Install Git Extras
-  if [[ ! "$(type -P git-extras)" ]]; then
-    e_header "Installing Git Extras"
-    (
-      cd $DOTFILES/vendor/git-extras &&
-      sudo make install
-    )
-  fi
-  # Install misc bins from zip file.
-  install_from_zip ngrok 'https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip'
-  install_from_zip terraform 'https://releases.hashicorp.com/terraform/0.9.2/terraform_0.9.2_linux_amd64.zip'
-}
 
 ####################
 # ACTUALLY DO THINGS

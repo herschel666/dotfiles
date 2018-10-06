@@ -129,7 +129,7 @@ map <silent> <leader>/ <Esc>:nohlsearch<CR>
 " Ignore things
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.gif,*.psd,*.o,*.obj,*.min.js
 set wildignore+=*/bower_components/*,*/node_modules/*
-set wildignore+=*/vendor/*,*/.git/*,*/.hg/*,*/.svn/*,*/log/*,*/tmp/*
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/log/*,*/tmp/*
 
 " Vim commands
 set hidden " When a buffer is brought to foreground, remember undo history and marks.

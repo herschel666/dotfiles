@@ -398,11 +398,11 @@ while true; do sudo -n true; sleep 10; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install a custom sudoers file that allows "sudo apt-get" to be executed
 # without asking for a password.
-sudoers_file=/etc/sudoers.d/cowboy-dotfiles
+sudoers_file=/etc/sudoers.d/herschel666-dotfiles
 # Contents of the sudoers file.
 function sudoers_text() {
   cat <<EOF
-# This file was created by cowboy's dotfiles script on $(date -I)
+# This file was created by herschel666's dotfiles script on $(date -I)
 # (which will never update it, only recreate it if it's missing)
 # Sudoers reference: http://ubuntuforums.org/showthread.php?t=1132821
 
@@ -515,6 +515,9 @@ do_stuff init
 
 # Alert if backups were made.
 if [[ "$backup" ]]; then
+  ssh_dir=".ssh/"
+  cp ${backup_dir}${ssh_dir}authorized_keys $DOTFILES/link/$ssh_dir
+  cp ${backup_dir}${ssh_dir}id_rsa_* $DOTFILES/link/$ssh_dir
   echo -e "\nBackups were moved to ~/${backup_dir#$HOME/}"
 fi
 
