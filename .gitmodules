@@ -28,9 +28,9 @@
 [submodule "rbenv-update"]
   path = link/.rbenv/plugins/rbenv-update
   url = https://github.com/rkh/rbenv-update.git
-[submodule "vendor/nvm"]
+[submodule "nvm"]
 	path = vendor/nvm
 	url = https://github.com/creationix/nvm.git
-[submodule "vendor/clion-wsl"]
+[submodule "clion-wsl"]
 	path = vendor/clion-wsl
 	url = https://github.com/JetBrains/clion-wsl
