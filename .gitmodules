@@ -31,6 +31,3 @@
 [submodule "nvm"]
 	path = vendor/nvm
 	url = https://github.com/creationix/nvm.git
-[submodule "clion-wsl"]
-	path = vendor/clion-wsl
-	url = https://github.com/JetBrains/clion-wsl
