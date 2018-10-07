@@ -19,6 +19,10 @@ function add_ppa() {
   apt_source_files+=("${parts[1]}-ubuntu-${parts[2]}-$release_name")
 }
 
+# Clean up first (https://askubuntu.com/a/1054276)
+sudo apt-add-repository -r ppa:armagetronad-dev/ppa
+sudo apt update -q
+
 #############################
 # WHAT DO WE NEED TO INSTALL?
 #############################
