@@ -468,6 +468,9 @@ if [[ ! "$(type -P git)" ]]; then
   exit 1
 fi
 
+# Setup SSH environment
+. $DOTFILES/vendor/clion-wsl/ubuntu_setup_env.sh
+
 # Initialize.
 if [[ ! -d $DOTFILES ]]; then
   # Dotfiles directory doesn't exist? Clone it!
