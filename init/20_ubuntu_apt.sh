@@ -79,6 +79,12 @@ apt_packages+=(ansible)
 # http://tipsonubuntu.com/2016/09/13/vim-8-0-released-install-ubuntu-16-04/
 add_ppa ppa:jonathonf/vim
 apt_packages+=(vim)
+apt_packages+=(vim-gtk3)
+apt_packages+=(vim-tiny)
+apt_packages+=(neovim-qt)
+apt_packages+=(vim-athena)
+apt_packages+=(vim-gtk)
+apt_packages+=(vim-nox)
 
 # https://launchpad.net/~hnakamur/+archive/ubuntu/tmux
 add_ppa ppa:hnakamur/tmux
