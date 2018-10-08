@@ -3,7 +3,7 @@
 # Powerline stuff.
 export POWERLINE_PREFIX="$(python -c "import powerline; print powerline.__path__[0]")"
 
-powerline-daemon -q
+powerline-daemon -q || { return 1; }
 export POWERLINE_BASH_CONTINUATION=1
 export POWERLINE_BASH_SELECT=1
 
