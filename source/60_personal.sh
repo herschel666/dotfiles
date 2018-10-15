@@ -1,4 +1,5 @@
 export WINHOME=/mnt/c/Users/emanuel.kluge
+export PATH="$HOME/.cargo/bin:$PATH"
 
 alias p='cd $WINHOME/Projects/src/'
 
