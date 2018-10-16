@@ -1,5 +1,6 @@
 export WINHOME=/mnt/c/Users/emanuel.kluge
 export PATH="$HOME/.cargo/bin:$PATH"
+export GPG_TTY=$(tty)
 
 alias p='cd $WINHOME/Projects/src/'
 
