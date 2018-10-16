@@ -30,8 +30,6 @@ apt_packages+=(
   cmatrix
   cowsay
   curl
-  docker.io
-  docker-compose
   git-core
   groff
   hollywood
