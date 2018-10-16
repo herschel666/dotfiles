@@ -1,4 +1,4 @@
-export WINHOME=/mnt/c/Users/emanuel.kluge
+export WINHOME=/c/Users/emanuel.kluge
 export PATH="$HOME/.cargo/bin:$PATH"
 export GPG_TTY=$(tty)
 
