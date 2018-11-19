@@ -1,6 +1,11 @@
 [user]
-  name = Emanuel Kluge
-  email = emanuel.kluge@xing.com
+  name = herschel666
+  email = <email>
+  signingkey = <signingkey>
+[includeIf "gitdir:~/Projects/src/source.xing.com/"]
+  path = .gitconfig-xing
+[includeIf "gitdir:~/Projects/src/github.com/xing/"]
+  path = .gitconfig-xing
 [core]
   autocrlf = input
   whitespace = fix,space-before-tab,tab-in-indent,trailing-space
@@ -41,6 +46,8 @@
   default = simple
 [pull]
   rebase = true
+[commit]
+  gpgsign = true
 [merge]
   log = true
 [difftool "Kaleidoscope"]

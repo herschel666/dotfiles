@@ -1,10 +1,6 @@
-export WINHOME=/c/Users/emanuel.kluge
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/.oly/bin:$PATH"
-export DOCKER_HOST=tcp://0.0.0.0:2375
-export GPG_TTY=$(tty)
-
-alias p='cd $WINHOME/Projects/src/'
+# export PATH="$HOME/.cargo/bin:$PATH"
+# export PATH="$HOME/.oly/bin:$PATH"
+# export DOCKER_HOST=tcp://0.0.0.0:2375
 
 function cd {
     builtin cd "$@"
