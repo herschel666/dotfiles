@@ -21,43 +21,20 @@ casks=(
   a-better-finder-rename
   alfred
   android-platform-tools
-  bartender
-  battle-net
-  bettertouchtool
   charles
   chromium
-  chronosync
-  controllermate
   docker
   dropbox
-  fastscripts
   firefox
   gyazo
-  hex-fiend
   iterm2
-  karabiner-elements
-  macvim
-  messenger-for-desktop
   midi-monitor
-  moom
   omnidisksweeper
-  race-for-the-galaxy
-  reaper
   robo-3t
-  screenhero
-  scroll-reverser
-  skype
   slack
-  sourcetree
   spotify
-  steam
   the-unarchiver
-  totalfinder
-  tower
-  vagrant
-  virtualbox
   vlc
-  ynab
   # Quick Look plugins
   betterzipql
   qlcolorcode
@@ -72,9 +49,6 @@ casks=(
   # Color pickers
   colorpicker-developer
   colorpicker-skalacolor
-  # Drivers
-  sonos
-  xbox360-controller-driver
   # Fonts
   font-m-plus
   font-mplus-nerd-font
