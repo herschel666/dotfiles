@@ -1,1 +1,1 @@
-../vendor/nvm/nvm.sh
+$DOTFILES/vendor/nvm/nvm.sh
